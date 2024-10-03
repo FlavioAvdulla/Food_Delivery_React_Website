@@ -11,7 +11,7 @@
 
 .explore-menu-text {
 	max-width: 60%;
-	columns: #808080;
+	color: #808080;
 }
 
 .explore-menu-list {
@@ -48,6 +48,4 @@
 	height: 2px;
 	background-color: #e2e2e2;
 	border: none;
-
-
 }
