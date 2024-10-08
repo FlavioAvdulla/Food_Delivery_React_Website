@@ -70,3 +70,7 @@
 	background-color: white;
 	font-weight: 600;
 }
+
+.food-item-counter img {
+	width: 30px;
+}
