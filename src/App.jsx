@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/Order" element={<PlaceOrder />} />
         </Routes>
       </div>
-      ;
       <Footer />
     </>
   );

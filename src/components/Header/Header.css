@@ -11,9 +11,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	gap: 1.5vw;
+	gap: 2.5vw;
 	max-width: 50%;
-	bottom: 10%;
+	bottom: 15%;
 	left: 6vw;
 	animation: fadeIn 3s;
 }
@@ -24,12 +24,18 @@
 	font-size: max(4.5vw, 22px);
 }
 
+.header-contents p {
+	color: white;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
 .header-contents button {
 	border: none;
 	padding: 1vw 2.3vw;
 	border-radius: 50px;
 	font-weight: 500;
-	color: #747474;
+	color: #232323;
 	background-color: white;
 	font-size: max(1vw, 13px);
 }
@@ -55,5 +61,9 @@
 
 	.header-contents button {
 		padding: 2vw 4vw;
+	}
+
+	.header-contents {
+		padding-bottom: 12px;
 	}
 }
