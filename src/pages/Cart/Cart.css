@@ -77,6 +77,8 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: #eaeaea;
+	border-radius: 4px;
+	padding-left: 10px;
 }
 
 .cart-promocode-input input {
@@ -89,8 +91,17 @@
 	border: none;
 	background-color: tomato;
 	color: white;
-	width: max(12vw, 200px);
+	width: max(12vw, 150px);
 	border-radius: 4px;
 	cursor: pointer;
 	padding: 12px 0px;
+}
+
+@media (max-width:750px) {
+	.cart-bottom {
+		flex-direction: column-reverse;
+	}
+	.cart-promocode {
+		justify-content: start;
+	}
 }
