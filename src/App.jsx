@@ -6,7 +6,7 @@ import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
-import NewProducts from "./components/NewProducts/NewProducts";
+
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />}/>
           <Route path="/Order" element={<PlaceOrder />}/>
         </Routes>
-        <NewProducts/>
+        
       </div>
       <Footer />
       
