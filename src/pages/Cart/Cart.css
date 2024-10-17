@@ -1,5 +1,7 @@
 .cart {
 	margin-top: 100px;
+	width: 80%;
+	margin: auto;
 }
 
 .cart-items-title {
