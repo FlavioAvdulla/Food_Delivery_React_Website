@@ -3,21 +3,22 @@
 	flex-direction: column;
 	gap: 20px;
 	width: 80%;
-	margin: auto;
+	margin: 100px auto;
 }
 
 .explore-menu h1 {
-	color: #262626;
 	font-weight: 600;
 	text-align: center;
-	font-size: 25px;
+	font-size: 45px;
+	color: tomato;
 }
 
 .explore-menu-text {
-	max-width: 100%;
-	color: #808080;
+	max-width: 80%;
+	color: #232323;
 	text-align: justify;
 	text-align-last: center;
+	margin: 0 auto;
 }
 
 .explore-menu-list {
@@ -43,9 +44,10 @@
 }
 
 .explore-menu-list-item p {
-	margin-top: 10px;
-	color: #747474;
-	font-size: max(1.4vw, 16px);
+	margin-top: 15px;
+	color: #232323;
+	font-size: max(1vw, 16px);
+	font-style: italic;
 	cursor: pointer;
 }
 
@@ -56,9 +58,17 @@
 	border: none;
 }
 
+.explore-menu-list-item {
+	transition: 0.3s ease-in-out;
+}
+
 .explore-menu-list-item .active {
 	border: 4px solid tomato;
 	padding: 2px;
+	
+}
+.explore-menu-list-item:hover {
+	scale: 105%;
 }
 
 @media (max-width:1050px) {

@@ -34,10 +34,10 @@
 
 .header-contents button {
 	border: none;
-	padding: 1vw 2.3vw;
-	border-radius: 50px;
+	padding: 0.7vw 2.3vw;
+	border-radius: 6px;
 	font-weight: 500;
-	color: #232323;
+	color: tomato;
 	background-color: white;
 	border: 1px solid white;
 	font-size: max(1vw, 13px);

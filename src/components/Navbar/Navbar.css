@@ -28,10 +28,10 @@
 .navbar button {
 	background: transparent;
 	font-size: 16px;
-	color: #232323;
+	color: tomato;
 	border: 1px solid tomato;
 	padding: 10px 30px;
-	border-radius: 50px;
+	border-radius: 6px;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
 }
