@@ -60,10 +60,19 @@
 	border: none;
 	color: white;
 	background-color: tomato;
+	border: 1px solid tomato;
 	width: max(15vw, 200px);
 	padding: 12px 0px;
 	border-radius: 4px;
 	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.cart-total button:hover {
+	background: transparent;
+    border: 1px solid tomato;
+    color: tomato;
+    scale: 105%;
 }
 
 .cart-promocode {
@@ -93,11 +102,20 @@
 .cart-promocode-input button {
 	border: none;
 	background-color: tomato;
+	border: 1px solid tomato;
 	color: white;
 	width: max(12vw, 150px);
 	border-radius: 4px;
 	cursor: pointer;
 	padding: 12px 0px;
+	transition: 0.3s ease-in-out;
+}
+
+.cart-promocode-input button:hover {
+	background: #fff;
+    border: 1px solid tomato;
+    color: tomato;
+    scale: 105%;
 }
 
 @media (max-width:750px) {

@@ -80,3 +80,13 @@
 .food-item-counter img {
 	width: 30px;
 }
+
+.fa-solid.fa-circle-plus {
+	color: tomato;
+	width: 35px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+	border-radius: 50px;
+}
