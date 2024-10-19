@@ -16,16 +16,16 @@ const Footer = () => {
             only five centuries, but also the leap into electronic
           </p>
           <div className="footer-social-icons">
-            <a href="#">
+            <a href="https://www.behance.net/flavioavdulla">
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="#">
+            <a href="https://www.behance.net/flavioavdulla">
               <i className="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="#">
+            <a href="https://www.behance.net/flavioavdulla">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="#">
+            <a href="https://www.behance.net/flavioavdulla">
               <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
