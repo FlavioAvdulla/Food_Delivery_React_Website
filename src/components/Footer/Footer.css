@@ -1,6 +1,6 @@
 .footer {
-	color: #d9d9d9;
-	background-color: #232323;
+	color: white;
+	background-color: tomato;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -43,12 +43,29 @@
 	text-align: justify;
 }
 
-.footer-social-icons img {
-	justify-content: space-between;
-	margin-right: 15px;
-	width: 40px;
-	transition: 0.3s ease-in-out;
+.footer-content-left img{
+	width: 180px;
+	height: auto;
 }
+
+.footer-social-icons {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.fa-brands {
+	border-radius: 50%;
+	color: white;
+	font-size: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.fa-brands:hover {
+	rotate: 360deg;
+	scale: 140%;
+}
+  
 
 .footer-social-icons img:hover {
 	rotate: 360deg;
@@ -58,7 +75,7 @@
 	width: 100%;
 	height: 2px;
 	margin: 10px 0px 0px 10px;
-	background: grey;
+	background: white;
 	border: none;
 }
 
