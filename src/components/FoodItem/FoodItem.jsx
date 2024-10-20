@@ -1,10 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../context/StoreContext";
 
 const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+  const [showMore, setShowMore] = useState(false);
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
 
   return (
     <div className="food-item">
@@ -33,13 +37,18 @@ const FoodItem = ({ id, name, price, description, image }) => {
           </div>
         )}
       </div>
-      
+
       <div className="food-item-info">
         <div className="food-item-name-rating">
           <p>{name}</p>
           <img src={assets.rating_starts} alt="Rating" />
         </div>
-        <p className="food-item-desc">{description}</p>
+        <p className="food-item-desc">
+          {showMore ? description : `${description.substring(0, 50)}...`}
+        </p>
+        <button className="show-more-btn" onClick={toggleShowMore}>
+          {showMore ? "Show Less" : "Show More"}
+        </button>
         <p className="food-item-price">${price}</p>
       </div>
     </div>

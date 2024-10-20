@@ -90,3 +90,16 @@
 	cursor: pointer;
 	border-radius: 50px;
 }
+
+.show-more-btn {
+	background: transparent;
+	border: none;
+	color: tomato;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.show-more-btn:hover {
+	color: #ff8484;
+}

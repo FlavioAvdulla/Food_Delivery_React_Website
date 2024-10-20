@@ -6,7 +6,7 @@
 	background-position: center;
 	display: flex;
     justify-content: left;
-	padding-left: 200px;
+	padding-left: 150px;
     align-items: center;
 	position: relative;
 	height: 500px;
@@ -39,4 +39,46 @@
 
 .app-download-platforms img:hover {
 	transform: scale(1.05);
+}
+
+/* ================================== Responsive */
+
+@media (max-width:1200px) {	
+	.app-background {
+		padding-left: 70px;
+	}
+
+	.app-download p {
+		font-size: 36px;
+	}
+}
+
+@media (max-width:992px) {	
+	.app-background {
+		padding-left: 70px;
+	}
+
+	.app-download p {
+		font-size: 33px;
+	}
+}
+
+@media (max-width:768px) {	
+	.app-background {
+		padding-left: 50px;
+	}
+
+	.app-download p {
+		font-size: 28px;
+	}
+}
+
+@media (max-width:576px) {	
+	.app-background {
+		padding-left: 50px;
+	}
+
+	.app-download p {
+		font-size: 28px;
+	}
 }

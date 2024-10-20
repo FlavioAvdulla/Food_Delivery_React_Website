@@ -73,7 +73,7 @@
 /* =============================== SEARCH ICON */
 .fa-solid.fa-magnifying-glass,
 .fa-solid.fa-cart-shopping {
-	color: #fe2323;
+	color: tomato;
 	font-size: 24px;
 	cursor: pointer;
 	transition: 0.15s ease-in-out;
