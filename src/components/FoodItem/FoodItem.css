@@ -82,13 +82,23 @@
 }
 
 .fa-solid.fa-circle-plus {
-	color: tomato;
-	width: 35px;
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	color: rgb(53, 202, 26);
+	font-size: 30px;
+}
+
+.fa-solid.fa-circle-plus:hover {
+	color: rgb(133, 216, 118);
 	cursor: pointer;
-	border-radius: 50px;
+}
+
+.fa-solid.fa-circle-minus {
+	color: rgb(255, 71, 71);
+	font-size: 30px;
+}
+
+.fa-solid.fa-circle-minus:hover {
+	color: #ff8484;
+	cursor: pointer;
 }
 
 .show-more-btn {
