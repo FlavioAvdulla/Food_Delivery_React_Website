@@ -5,32 +5,40 @@
 	align-items: center;
 	width: 80%;
 	margin: auto;
-}
-
-.navbar img {
+  }
+  
+  .navbar img {
 	width: 180px;
 	height: auto;
-}
-
-.navbar .logo {
+  }
+  
+  .navbar .logo {
 	width: 150px;
-}
-
-.navbar-menu {
+  }
+  
+  .navbar-menu {
 	display: flex;
 	list-style: none;
 	gap: 20px;
 	color: #232323;
 	font-size: 18px;
-}
-
-.navbar-right {
+  }
+  
+  .navbar-menu a {
+	margin-right: 20px;
+  }
+  
+  .navbar-right {
 	display: flex;
 	align-items: center;
 	gap: 40px;
-}
-
-.navbar button {
+  }
+  
+  .navbar .fa-bars {
+	display: none;
+  }
+  
+  .navbar button {
 	background: transparent;
 	font-size: 16px;
 	color: tomato;
@@ -39,28 +47,28 @@
 	border-radius: 6px;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
-}
-
-.navbar button:hover {
+  }
+  
+  .navbar button:hover {
 	background: tomato;
 	color: white;
 	scale: 110%;
-}
-
-.navbar .active {
+  }
+  
+  .navbar .active {
 	padding-bottom: 2px;
 	border-bottom: 2px solid tomato;
-}
-
-.navbar li {
+  }
+  
+  .navbar li {
 	cursor: pointer;
-}
-
-.navbar-search-icon {
+  }
+  
+  .navbar-search-icon {
 	position: relative;
-}
-
-.navbar-search-icon .dot {
+  }
+  
+  .navbar-search-icon .dot {
 	position: absolute;
 	min-width: 10px;
 	min-height: 10px;
@@ -68,73 +76,141 @@
 	border-radius: 5px;
 	top: -8px;
 	right: -8px;
-}
-
-/* =============================== SEARCH ICON */
-.fa-solid.fa-magnifying-glass,
-.fa-solid.fa-cart-shopping {
+  }
+  
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-cart-shopping {
 	color: tomato;
 	font-size: 24px;
 	cursor: pointer;
 	transition: 0.15s ease-in-out;
-}
-
-.fa-solid.fa-magnifying-glass:hover,
-.fa-solid.fa-cart-shopping:hover {
+  }
+  
+  .fa-solid.fa-magnifying-glass:hover,
+  .fa-solid.fa-cart-shopping:hover {
 	color: #ff8484;
-}
-
-
-/* =============================== RESPONSIVE */
-@media (max-width:1050px) {
+  }
+  
+  @media (max-width: 1050px) {
 	.navbar .logo {
-		width: 140px;
+	  width: 140px;
 	}
-
+  
 	.navbar-menu {
-		gap: 20px;
-		font-size: 17px;
+	  gap: 20px;
+	  font-size: 17px;
 	}
-
+  
 	.navbar-right {
-		gap: 30px;
+	  gap: 30px;
 	}
-
+  
 	.navbar-right img {
-		width: 22px;
+	  width: 22px;
 	}
-
+  
 	.navbar-right button {
-		padding: 8px 25px;
+	  padding: 8px 25px;
 	}
-}
-
-@media (max-width:900px) {
+  }
+  
+  @media (max-width: 900px) {
 	.navbar .logo {
-		width: 120px;
+	  width: 120px;
 	}
-
+  
 	.navbar-menu {
-		gap: 15px;
-		font-size: 16px;
+	  display: flex;
+	  list-style: none;
+	  gap: 20px;
+	  color: white;
+	  font-size: 18px;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 40%;
+	  background-color: tomato;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: flex-end;
+	  padding: 0px;
+	  transition: 0.3s ease-in-out;
+	  transform: translateX(100%);
+	  z-index: 1000;
 	}
-
+  
 	.navbar-right {
-		gap: 20px;
+	  display: flex;
 	}
-
+  
+	.navbar-menu.open {
+	  display: flex;
+	  background-color: rgba(255, 99, 71, 0.76);
+	  backdrop-filter: blur(9px);
+	  height: 100%;
+	}
+  
+	.navbar li {
+	  display: block;
+	  margin-top: 65px;
+	  padding-right: 50px;
+	  transition: 0.3s;
+	}
+  
+	.navbar .fa-bars {
+	  display: block;
+	  color: tomato;
+	  z-index: 1000;
+	  font-size: 22px;
+	  cursor: pointer;
+	}
+	.navbar .fa-bars.active-icon {
+		color: white; /* Change this to the color you want */
+	  }
+	  
+  
+	@keyframes slideIn {
+	  from {
+		transform: translateX(100%);
+	  }
+	  to {
+		transform: translateX(0);
+	  }
+	}
+  
+	.navbar-menu.open {
+	  animation: slideIn 0.6s forwards;
+	  transform: translateX(0);
+	}
+  
+	@keyframes slideOut {
+	  from {
+		transform: translateX(0);
+	  }
+	  to {
+		transform: translateX(100%);
+	  }
+	}
+  
+	.navbar-menu.closed {
+	  animation: slideOut 0.3s forwards;
+	  transform: translateX(100%);
+	}
+  
 	.navbar-right img {
-		width: 20px;
+	  width: 20px;
 	}
-
+  
 	.navbar-right button {
-		padding: 8px 20px;
-		font-size: 15px;
+	  padding: 8px 20px;
+	  font-size: 15px;
 	}
-}
-
-@media (max-width:750px) {
+  }
+  
+  @media (max-width: 750px) {
 	.navbar-menu {
-		display: none;
+	  display: none;
 	}
-}
+  }
+  
