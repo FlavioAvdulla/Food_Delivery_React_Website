@@ -1,11 +1,22 @@
 .header {
 	height: 34vw;
-	margin: 30px auto;
+	margin: 81px auto;
 	background-size: contain;
 	position: relative;
 	width: 80%;
-	margin: auto;
-	margin-top: 150px;
+}
+
+.header-contents {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding-bottom: 17px;
+	gap: 2.5vw;
+	max-width: 50%;
+	bottom: 15%;
+	left: 6vw;
+	animation: fadeIn 3s;
 }
 
 .header_img {
@@ -14,19 +25,6 @@
 	width: 100%;
 	z-index: -1;
   }
-
-.header-contents {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	padding-bottom: 17px;
-	/* gap: 2.5vw; */
-	/* max-width: 50%; */
-	/* bottom: 15%; */
-	left: 6vw;
-	animation: fadeIn 3s;
-}
 
 .header-contents h2 {
 	font-weight: 800;
