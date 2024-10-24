@@ -15,6 +15,7 @@ const Header = () => {
         </p>
         <button>VIEW MENU</button>
       </div>
+      <img className="header_img" src="/header_img.png" alt="" />
     </div>
   );
 };

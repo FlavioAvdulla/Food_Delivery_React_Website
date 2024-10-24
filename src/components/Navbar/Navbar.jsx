@@ -16,7 +16,6 @@ const Navbar = ({ setShowLogin }) => {
   };
 
   return (
-    <nav className="navbar-background">
       <nav className="navbar">
         <Link to="/">
           <img src="src/assets/tomato_logo_orange.svg" alt="Tomato Logo" />
@@ -75,7 +74,6 @@ const Navbar = ({ setShowLogin }) => {
           onClick={toggleMenu}
         ></i>{" "}
       </nav>
-    </nav>
   );
 };
 
