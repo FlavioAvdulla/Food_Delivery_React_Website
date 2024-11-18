@@ -1,0 +1,173 @@
+.header {
+	height: 34vw;
+	margin: 81px auto;
+	background-size: contain;
+	position: relative;
+	width: 80%;
+}
+
+.header-contents {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding-bottom: 17px;
+	gap: 2.5vw;
+	max-width: 50%;
+	bottom: 15%;
+	left: 6vw;
+	animation: fadeIn 3s;
+}
+
+.header_img {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	z-index: -1;
+  }
+
+.header-contents h2 {
+	font-weight: 800;
+	color: white;
+	font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+	color: white;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.header-contents button {
+	border: none;
+	padding: 0.7vw 2.3vw;
+	border-radius: 6px;
+	font-weight: 500;
+	color: tomato;
+	background-color: white;
+	border: 1px solid white;
+	font-size: max(1vw, 13px);
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.header-contents button:hover {
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	scale: 105%;
+}
+
+/* =============================== RESPONSIVE */
+
+@media (max-width:1700px) {
+
+	.header-contents {
+		max-width: 64%;
+		gap: 1vw;
+		bottom: 18%;
+	}
+}
+
+@media (max-width:1400px) {
+
+	.header-contents {
+		max-width: 64%;
+		gap: 1vw;
+		bottom: 18%;
+	}
+}
+
+@media (max-width:1200px) {
+
+	.header-contents {
+		max-width: 64%;
+		bottom: 13%;
+	}
+
+	.header-contents h2 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width:1080px) {
+
+	.header-contents {
+		max-width: 80%;
+		gap: 1vw;
+		bottom: 20%;
+	}
+
+	.header-contents h2 {
+		font-size: 35px;
+	}
+}
+
+@media (max-width:960px) {
+
+	.header-contents {
+		max-width: 85%;
+		gap: 1vw;
+		bottom: 18%;
+	}
+
+	.header-contents h2 {
+		font-size: 30px;
+	}
+	.header-contents p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width:600px) {
+	.header-contents {
+		max-width: 85%;
+		gap: 3.5vw;
+		bottom: 12%;
+	}
+	.header-contents h2 {
+		font-size: 25px;
+	}
+}
+
+@media (max-width:750px) {
+
+	.header-contents {
+		max-width: 65%;
+		gap: 3.5vw;
+		bottom: 19%;
+	}
+
+	.header-contents p {
+		display: none;
+	}
+
+	.header-contents h2 {
+		font-size: 25px;
+	}
+
+	.header-contents button {
+		border: none;
+		padding: 1.5vw 3.3vw;
+		border-radius: 50px;
+		font-weight: 500;
+		color: #232323;
+		background-color: white;
+		border: 1px solid white;
+		font-size: max(1vw, 13px);
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	.header-contents button:hover {
+		background: transparent;
+		border: 1px solid white;
+		color: white;
+		scale: 105%;
+	}
+
+	.header-contents {
+		/* padding-bottom: 3px; */
+	}
+
+}

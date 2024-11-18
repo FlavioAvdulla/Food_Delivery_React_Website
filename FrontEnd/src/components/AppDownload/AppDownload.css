@@ -1,0 +1,84 @@
+.app-background {
+	margin-top: 100px;
+	background: url(../../assets/food_33.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+    justify-content: left;
+	padding-left: 150px;
+    align-items: center;
+	position: relative;
+	height: 500px;
+}
+
+.app-download {
+	font-size: max(3vw, 20px);
+	text-align: left;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+
+.tomato {
+	color: tomato;
+}
+
+.app-download-platforms {
+	display: flex;
+	justify-content: left;
+	gap: max(2vw, 10px);
+	margin-top: 40px;
+}
+
+.app-download-platforms img {
+	width: max(30vw, 120px);
+	max-width: 180px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.app-download-platforms img:hover {
+	transform: scale(1.05);
+}
+
+/* ================================== Responsive */
+
+@media (max-width:1200px) {	
+	.app-background {
+		padding-left: 70px;
+	}
+
+	.app-download p {
+		font-size: 36px;
+	}
+}
+
+@media (max-width:992px) {	
+	.app-background {
+		padding-left: 70px;
+	}
+
+	.app-download p {
+		font-size: 33px;
+	}
+}
+
+@media (max-width:768px) {	
+	.app-background {
+		padding-left: 50px;
+	}
+
+	.app-download p {
+		font-size: 28px;
+	}
+}
+
+@media (max-width:576px) {	
+	.app-background {
+		padding-left: 50px;
+	}
+
+	.app-download p {
+		font-size: 28px;
+	}
+}
