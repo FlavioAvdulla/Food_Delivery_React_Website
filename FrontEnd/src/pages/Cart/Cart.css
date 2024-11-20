@@ -126,3 +126,7 @@
 		justify-content: start;
 	}
 }
+
+.margin {
+	margin: 40px auto;
+}
