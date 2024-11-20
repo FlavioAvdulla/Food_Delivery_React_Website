@@ -3,6 +3,9 @@ import "./Add.css";
 import { assets } from "../../assets/assets";
 
 const Add = () => {
+
+  const [image, setImage] = useState(false);
+
   return (
     <div className="add">
       <form className="flex-col">
@@ -11,7 +14,7 @@ const Add = () => {
           <label htmlFor="image">
             <img src={assets.upload_area} alt="" />
           </label>
-          <input type="file" id="image" hidden required />
+          <input onChange={(e)=>setImage(e.target.files[0])} type="file" id="image" hidden required />
         </div>
         <div className="add-product-name flex-col">
           <p>Product Name</p>
