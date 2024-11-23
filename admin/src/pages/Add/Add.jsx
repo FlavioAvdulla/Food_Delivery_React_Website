@@ -4,8 +4,7 @@ import { assets } from "../../assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Add = () => {
-  const url = "http://localhost:4000";
+const Add = ({ url }) => {
   const [image, setImage] = useState(null); // Updated to null
   const [data, setData] = useState({
     name: "",
@@ -92,7 +91,12 @@ const Add = () => {
         <div className="add-category-price">
           <div className="add-category flex-col">
             <p>Product category</p>
-            <select onChange={onChangeHandler} name="category" value={data.category} required>
+            <select
+              onChange={onChangeHandler}
+              name="category"
+              value={data.category}
+              required
+            >
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
               <option value="Deserts">Deserts</option>
