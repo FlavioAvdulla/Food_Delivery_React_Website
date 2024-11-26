@@ -125,7 +125,7 @@ We welcome contributions to the Tomato food delivery app! If you'd like to contr
 - Create a pull request with a description of your changes.
 
 ## Contact
-For any inquiries or issues, feel free to reach out to us:
+For any inquiries or issues, feel free to reach out to me:
 
 - Email: **a.flavio4366@gmail.com**
 - Phone: **+355 67 63 11 918**
