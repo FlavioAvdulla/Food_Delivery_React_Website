@@ -20,7 +20,6 @@ Welcome to the **Tomato** food delivery web application! This project is a full-
 ### Frontend
 - **HTML5, CSS3, JavaScript**
 - **React.js**: For dynamic user interface
-- **Bootstrap**: For responsive design
 
 ### Backend
 - **Node.js**: JavaScript runtime for server-side logic
