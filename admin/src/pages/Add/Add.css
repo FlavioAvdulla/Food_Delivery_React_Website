@@ -28,6 +28,7 @@
 .add-product-name input,
 .add-product-description textarea {
     padding: 10px;
+    border-radius: 4px;
 }
 
 .add-category-price {
@@ -39,6 +40,7 @@
 .add-category-price input {
     max-width: 120px;
     padding: 10px;
+    border-radius: 4px;
 }
 
 .add-btn {
@@ -46,9 +48,9 @@
     border: none;
     padding: 10px;
     background-color: tomato;
-    border: 1px solid tomato;
     color: white;
     cursor: pointer;
+    border-radius: 4px;
     transition: 0.3s ease-in-out;
 }
 
