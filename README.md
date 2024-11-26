@@ -2,8 +2,8 @@
 
 Welcome to the **Tomato** food delivery web application! This project is a full-stack web application designed for online food ordering and delivery. It features an intuitive menu, easy ordering system, and payment integration. Users can browse the menu, add items to their cart, and checkout for a seamless food delivery experience.
 
-![food_delivery](https://github.com/user-attachments/assets/672d57c1-4ada-44f2-812f-d5cd88a2d546)
 ![food_delivery1](https://github.com/user-attachments/assets/e5259e65-58f2-44f1-ac1b-9421a7dc3e96)
+![food_delivery](https://github.com/user-attachments/assets/672d57c1-4ada-44f2-812f-d5cd88a2d546)
 ![food_delivery_2](https://github.com/user-attachments/assets/85207ea1-7b46-46a7-a448-7a065c4eded6)
 
 ---
