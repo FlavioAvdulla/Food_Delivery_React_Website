@@ -45,9 +45,15 @@
     max-width: 120px;
     border: none;
     padding: 10px;
-    background-color: black;
+    background-color: tomato;
+    border: 1px solid tomato;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+    scale: 110%;
 }
 
 .image {

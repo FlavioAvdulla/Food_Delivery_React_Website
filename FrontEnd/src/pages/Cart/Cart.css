@@ -28,10 +28,6 @@
 	border: none;
 }
 
-.cart-items-item .cross {
-	cursor: pointer;
-}
-
 .cart-bottom {
 	margin-top: 80px;
 	display: flex;
@@ -70,9 +66,9 @@
 
 .cart-total button:hover {
 	background: transparent;
-    border: 1px solid tomato;
-    color: tomato;
-    scale: 105%;
+	border: 1px solid tomato;
+	color: tomato;
+	scale: 105%;
 }
 
 .cart-promocode {
@@ -111,17 +107,53 @@
 	transition: 0.3s ease-in-out;
 }
 
+/* Close icon in cart page */
+.add-remove-food {
+	display: flex;
+	gap: 15px;
+}
+
+/* ============================= add foods */
+.fa-solid.fa-circle-plus {
+	color: rgb(53, 202, 26);
+	font-size: 25px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.fa-solid.fa-circle-plus:hover {
+	color: rgb(133, 216, 118);
+	cursor: pointer;
+	scale: 130%;
+}
+
+/* ============================= remove foods */
+.fa-solid.fa-circle-xmark {
+	color: rgb(255, 71, 71);
+	font-size: 25px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.fa-solid.fa-circle-xmark:hover {
+	color: #ff8484;
+	cursor: pointer;
+	scale: 130%;
+}
+
+
 .cart-promocode-input button:hover {
 	background: #fff;
-    border: 1px solid tomato;
-    color: tomato;
-    scale: 105%;
+	border: 1px solid tomato;
+	color: tomato;
+	scale: 105%;
 }
 
 @media (max-width:750px) {
 	.cart-bottom {
 		flex-direction: column-reverse;
 	}
+
 	.cart-promocode {
 		justify-content: start;
 	}

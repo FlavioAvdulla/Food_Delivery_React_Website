@@ -1,13 +1,20 @@
 import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 import { StoreContext } from "../context/StoreContext";
+import { assets } from "../../assets/assets";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
-  const { getTotalCartAmount } = useContext(StoreContext);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [iconColor, setIconColor] = useState(false);
+  const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+  const navigate = useNavigate();
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    navigate("/");
+  };
 
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -65,11 +72,27 @@ const Navbar = ({ setShowLogin }) => {
           </Link>
           <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
-        <button onClick={() => setShowLogin(true)}>SIGN IN</button>
+        {!token ? (
+          <button onClick={() => setShowLogin(true)}>SIGN IN</button>
+        ) : (
+          <div className="navbar-profile">
+            <i className="fa-solid fa-user"></i>
+            <ul className="nav-profile-dropdown">
+              <li>
+                <img src={assets.bag_icon} alt="" />
+                <p>Orders</p>
+              </li>
+              <hr />
+              <li onClick={logout}>
+                <img src={assets.logout_icon} alt="" />
+                <p>Logout</p>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
       <i
         className={`fa-solid fa-bars ${iconColor ? "active-icon" : ""}`}
-        alt=""
         onClick={toggleMenu}
       ></i>{" "}
     </nav>
