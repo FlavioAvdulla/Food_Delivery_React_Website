@@ -54,6 +54,8 @@ git clone https://github.com/FlavioAvdulla/Food_Delivery_React_Website.git
 Navigate to the backend folder and install required packages:
 `
 cd backend
+`
+`
 npm install
 `
 
@@ -61,6 +63,8 @@ npm install
 Navigate to the frontend folder and install required packages:
 `
 cd ../frontend
+`
+`
 npm install
 `
 
@@ -78,6 +82,8 @@ STRIPE_KEY=your_stripe_key (if payment is integrated)
 
 `
 cd backend
+`
+`
 npm run server
 `
 - Start the frontend development server:
