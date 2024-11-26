@@ -81,13 +81,18 @@ STRIPE_KEY=your_stripe_key (if payment is integrated)
 - Start the backend server:
 
 `
-cd backend
+cd BackEnd
 `
 `
 npm run server
 `
 - Start the frontend development server:
+`
+cd FrontEnd
+`
+`
 npm run dev
+`
 
 ## Usage
 - **Browse Menu:** Visit the home page to explore the food menu with various categories.
