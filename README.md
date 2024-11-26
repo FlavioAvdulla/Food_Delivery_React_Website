@@ -52,6 +52,7 @@ git clone https://github.com/FlavioAvdulla/Food_Delivery_React_Website.git
 
 **2. Install backend dependencies:**
 Navigate to the backend folder and install required packages:
+
 `
 cd backend
 `
@@ -61,6 +62,7 @@ npm install
 
 **3. Install frontend dependencies:**
 Navigate to the frontend folder and install required packages:
+
 `
 cd ../frontend
 `
