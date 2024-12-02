@@ -39,7 +39,7 @@ const Cart = () => {
                   <p>${(item.price * cartItems[item._id]).toFixed(2)}</p>
                   <div className="add-remove-food">
                     <p onClick={() => addToCart(item._id)}>
-                      <i class="fa-solid fa-circle-plus"></i>
+                      <i className="fa-solid fa-circle-plus"></i>
                     </p>
                     <p onClick={() => removeFromCart(item._id)}>
                       <i className="fa-solid fa-circle-xmark"></i>
