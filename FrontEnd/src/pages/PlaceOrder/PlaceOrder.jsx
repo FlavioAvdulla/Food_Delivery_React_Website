@@ -45,23 +45,25 @@ const PlaceOrder = () => {
       amount: getTotalCartAmount() + 2,
     };
     let response = await axios.post(url + "/api/order/place", orderData, {
-      headers: { token } });
-      if (response.data.success) {
-        const {session_url} = response.data;
-        window.location.replace(session_url);
-      }
-      else {
-        alert("Error")
-      }
+      headers: { token },
+    });
+    if (response.data.success) {
+      const { session_url } = response.data;
+      window.location.replace(session_url);
+    } else {
+      alert("Error");
+    }
   };
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  useEffect(()=> {
+  useEffect(() => {
     if (!token) {
-      
+      navigate("/cart");
+    } else if (getTotalCartAmount() === 0) {
+      navigate("/cart");
     }
-  },[token])
+  }, [token]);
 
   return (
     <form onSubmit={placeOrder} className="place-order">
