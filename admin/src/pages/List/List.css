@@ -1,27 +1,51 @@
+.list.add.flex-col {
+    padding: 50px 0px 100px 0px;
+}
+
 .list-table-format {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
     align-items: center;
     gap: 10px;
     padding: 12px 15px;
-    border: 1px solid #cacaca;
-    font-size: 13px;
+    border: 1px solid tomato;
+    border-top: none;
+    font-size: 15px;
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .list-table-format.title {
-    background-color: #f9f9f9;
+    background-color: tomato;
+    color: white;
 }
 
 .list-table-format img {
     width: 50px;
 }
 
+.fa-solid.fa-circle-xmark {
+	color: rgb(255, 71, 71);
+	font-size: 25px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.fa-solid.fa-circle-xmark:hover {
+	color: #ff8484;
+	cursor: pointer;
+	scale: 130%;
+}
+
+.list-table-format .price {
+    font-weight: 700;
+}
+
 @media (max-width:600px) {
     .list-table-format {
-        grid-template-columns: 1fr 3fr 1fr;
-        gap: 15px;
-    }
-    .list-table-format.title {
-        display: none;
+        grid-template-columns: 0.5fr 2fr 1fr 0.5fr 0.5fr;
     }
 }

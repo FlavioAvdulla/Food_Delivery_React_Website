@@ -30,10 +30,10 @@ const List = ({ url }) => {
 
   return (
     <div className="list add flex-col">
-      <p>All food list.</p>
+      <p className="list-title">All food list.</p>
       <div className="list-table">
         <div className="list-table-format title">
-          <b>Imagr</b>
+          <b>Image</b>
           <b>Name</b>
           <b>Category</b>
           <b>Price</b>
@@ -45,9 +45,9 @@ const List = ({ url }) => {
               <img src={`${url}/images/` + item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
-              <p>${item.price}</p>
+              <p className="price">${item.price}</p>
               <p onClick={() => removeFood(item._id)} className="cursor">
-                X
+              <i className="fa-solid fa-circle-xmark"></i>
               </p>
             </div>
           );

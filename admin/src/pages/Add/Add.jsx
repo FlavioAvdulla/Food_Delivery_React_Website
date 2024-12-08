@@ -52,11 +52,15 @@ const Add = ({ url }) => {
       <form className="flex-col" onSubmit={onSubmitHandler}>
         <div className="add-img-upload flex-col">
           <p>Upload Image</p>
-          <label htmlFor="image">
+          {/* <label htmlFor="image">
             <img
               src={image ? URL.createObjectURL(image) : assets.upload_area}
               alt="Upload"
             />
+          </label> */}
+          <label htmlFor="image">
+            <i className="fa-solid fa-cloud-arrow-up"></i>
+            {image && <img src={URL.createObjectURL(image)} alt="Upload" />}
           </label>
           <input
             onChange={(e) => setImage(e.target.files[0])}

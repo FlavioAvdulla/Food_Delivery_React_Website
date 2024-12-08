@@ -37,7 +37,7 @@
 .navbar-right {
 	display: flex;
 	align-items: center;
-	gap: 40px;
+	gap: 50px;
 }
 
 .navbar .fa-bars {
@@ -158,7 +158,7 @@
 	}
 
 	.navbar-right {
-		gap: 37px;
+		gap: 50px;
 	}
 }
 
@@ -175,7 +175,7 @@
 	}
 
 	.navbar-right {
-		gap: 40px;
+		gap: 50px;
 	}
 
 	.navbar-right img {
@@ -192,13 +192,6 @@
 @media (max-width: 900px) {
 	.navbar .logo {
 		width: 120px;
-	}
-
-	.navbar-right {
-		display: flex;
-		align-items: center;
-		gap: 50px;
-		padding-left: 100px
 	}
 
 	.navbar-menu {
@@ -351,7 +344,7 @@
 	.navbar-right {
 		display: flex;
 		align-items: center;
-		gap: 27px;
+		gap: 40px;
 		/* scale: 85%; */
 	}
 
@@ -385,10 +378,6 @@
 		/* padding-right: 37px; */
 		padding-right: 20%;
 		transition: 0.3s;
-	}
-	.navbar-right {
-		padding-left: 0px;
-		gap: 17px;
 	}
 
 	.navbar button {

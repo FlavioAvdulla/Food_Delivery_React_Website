@@ -13,6 +13,19 @@
     gap: 20px;
 }
 
+.sidebar-options p {
+    font-size: 14px;
+}
+
+.fa-solid.fa-circle-plus,
+.fa-solid.fa-list,
+.fa-solid.fa-list-check {
+	color: rgb(255, 71, 71);
+	font-size: 25px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
 .sidebar-option {
     display: flex;
     align-items: center;
@@ -29,7 +42,13 @@
     border-color: tomato;
 }
 
-@media (max-width:900px) {
+@media (min-width:900px) and (max-width:1200px) {
+    .sidebar-options p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:700px) {
     .sidebar-option p {
         display: none;
     }
