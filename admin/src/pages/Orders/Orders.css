@@ -5,9 +5,16 @@
     gap: 30px;
     border: 1px solid tomato;
     padding: 40px;
-    margin: 30px 0px;
+    margin: 50px 0px 50px 0px;
     font-size: 14px;
     color: #505050;
+}
+
+
+.order-outer {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
 }
 
 .order-item-food,
