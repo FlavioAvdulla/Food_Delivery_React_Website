@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 © Flavio Avdulla - All rights reserved
+        Copyright 2025 © Flavio Avdulla - All rights reserved
       </p>
     </div>
   );
